@@ -1,6 +1,6 @@
 {
-  "name": "electron-react-tailwindcss",
-  "version": "0.1.0",
+  "name": "FrutaControl",
+  "version": "1.0.0",
   "private": true,
   "main": "public/electron.js",
   "homepage": "./",
@@ -8,6 +8,7 @@
     "name": "Victor Oliveira",
     "email": "xitornet.23@gmail.com"
   },
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^14.0.0",
@@ -29,8 +30,8 @@
     "electron:package:linux": "yarn build && electron-builder -l -c.extraMetadata.main=build/electron.js"
   },
   "build": {
-    "appId": "com.exemple.ERT",
-    "productName": "ERT Template",
+    "appId": "com.exemple.FrutaControl",
+    "productName": "FrutaControl",
     "files": [
       "build/**/*",
       "node_modules/**/*"

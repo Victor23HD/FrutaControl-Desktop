@@ -7,11 +7,21 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
+      autoHideMenuBar: true,
+      setMenuBarVisibility: false,
       preload: path.join(__dirname, "preloader.js"),
     },
   });
-  win.loadURL(isDev? "http://localhost:3000": `file://${path.join(__dirname, "../build/index.html")}`);
+
+  win.setMenu(null);
+  win.loadURL(
+    isDev
+      ? "http://localhost:3000"
+      : `file://${path.join(__dirname, "../build/index.html")}`
+  );
 }
+
+
 
 app.whenReady().then(() => {
   createWindow();
