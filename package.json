@@ -38,6 +38,9 @@
     ],
     "directories": {
       "buildResources": "public"
+    },
+    "win": {
+      "icon": "public/logo192.png"
     }
   },
   "eslintConfig": {

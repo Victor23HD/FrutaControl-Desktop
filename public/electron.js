@@ -4,13 +4,16 @@ const isDev = require("electron-is-dev");
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    minWidth: 800,
+    minHeight: 600,
     webPreferences: {
       autoHideMenuBar: true,
       setMenuBarVisibility: false,
       preload: path.join(__dirname, "preloader.js"),
+      nodeIntegration: false
     },
+    center: true,
+    icon: path.join(__dirname, 'logo192.png')
   });
 
   win.setMenu(null);
