@@ -1,12 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import Login from "./pages/login/index";
+import Home from "./pages/home/index.js";
+import "./others/style.css";
+import reportWebVitals from "./others/reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 document.title = "FrutaControl";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />}/>
+         {/*HomeRoute*/}
+         <Route
+         path="/Home"
+         element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

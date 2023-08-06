@@ -1,6 +1,13 @@
-import "./App.css";
+import { useNavigate } from "react-router-dom";
 
-export default function App() {
+export default function Login() {
+  let navigate = useNavigate();
+
+  const handleFormSubmit = () => {
+    // Aqui você pode adicionar qualquer lógica adicional antes de navegar
+    navigate("/Home");
+  };
+
   return (
     <>
       {/* LOGIN INTERFACE */}
@@ -19,8 +26,8 @@ export default function App() {
               Senha
               <input className='block border-b border-gray-500 mb-8 outline-none' type="password" name="password" placeholder='Digite sua senha'/>
             </label>
-            <input className='bg-green-400 p-2 px-3 rounded-lg font-sans' type="submit" value="Enviar" />
-          </form>
+            <input onClick={handleFormSubmit} className='bg-green-400 p-2 px-3 rounded-lg font-sans' type="submit" value="Enviar" />
+          </form> 
         </div>
       </div>
     </>
