@@ -16,6 +16,10 @@ ReactDOM.render(
          <Route
          path="/Home"
          element={<Home/>}/>
+         {/*LoginRoute*/}
+         <Route
+         path="/Login"
+         element={<Login />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
