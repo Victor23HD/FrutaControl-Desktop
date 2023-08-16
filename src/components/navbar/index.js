@@ -11,7 +11,7 @@ export default function Navbar() {
           <i className="">Procurar</i>
         </button>
         <button className="mb-4 p-2">
-          <i className="">Finanças</i>
+          <i className="fas fa-home">Finanças</i>
         </button>
       </div>
     </div>

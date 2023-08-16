@@ -11,23 +11,23 @@ export default function Login() {
   return (
     <>
       {/* LOGIN INTERFACE */}
-       <div className='bg-green-200 flex absolute items-center justify-center h-screen w-screen '>
-        <div className='flex-col bg-white rounded-lg flex items-center justify-center shadow-lg p-6 '>
-          <div className='font-semibold text-xl mb-6'>
-            FrutaControl
-          </div>
-
-          <form className="flex flex-col items-center outline-none">
-            <label className='text-lg font-sans'>
-              Usuário
-              <input className='block border-b border-gray-500 mb-6 outline-none' type="text" name="name" placeholder='Digite seu e-mail'/>
+      <div className="flex h-screen flex-col bg-green-300">
+        <div className="m-auto bg-white rounded-xl grid grid-cols-2 shadow-lg">
+          <form className="flex flex-col mx-auto p-8 px-12">
+            <label className="text-center text-2xl font-semibold my-3 mb-6">
+              Fruta-Control
             </label>
-            <label className='text-lg font-sans'>
-              Senha
-              <input className='block border-b border-gray-500 mb-8 outline-none' type="password" name="password" placeholder='Digite sua senha'/>
-            </label>
-            <input onClick={handleFormSubmit} className='bg-green-400 p-2 px-3 rounded-lg font-sans' type="submit" value="Enviar" />
-          </form> 
+            <div className="flex flex-col">
+              <label className="">Login</label>
+              <input className="border-b border-gray-600 outline-none"></input>
+              <label className="mt-3">Senha</label>
+              <input className="border-b border-gray-600 outline-none" type="password"></input>
+              <button className="bg-orange-200 mt-6 p-2 rounded-lg font-medium">
+                Enviar
+              </button>
+            </div>
+          </form>
+          <div className="bg-[url('https://ser.vitao.com.br/wp-content/uploads/2017/12/shutterstock_252338818-1-920x535.jpg')] bg-cover rounded-r-xl"></div>
         </div>
       </div>
     </>
