@@ -27,7 +27,7 @@ export default function Login() {
               </button>
             </div>
           </form>
-          <div className="bg-[url('https://ser.vitao.com.br/wp-content/uploads/2017/12/shutterstock_252338818-1-920x535.jpg')] bg-cover rounded-r-xl"></div>
+          <div className="bg-[url('/src/Images/login_image.jpg)] bg-cover rounded-r-xl"></div>
         </div>
       </div>
     </>
