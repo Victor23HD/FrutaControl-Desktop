@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import backgroundImage from "../../Images/login_image.jpg";
 
 export default function Login() {
   let navigate = useNavigate();
@@ -27,7 +28,7 @@ export default function Login() {
               </button>
             </div>
           </form>
-          <div className="bg-[url('/src/Images/login_image.jpg)] bg-cover rounded-r-xl"></div>
+          <div className="bg-cover rounded-r-xl" style={{ backgroundImage: `url(${backgroundImage})`}}></div>
         </div>
       </div>
     </>
